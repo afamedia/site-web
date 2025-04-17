@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AFA Media – Actu France Alerte</title>
+  <style>
+    :root {
+      --primary: #ff0033;
+      --background: #0d0d0d;
+      --text: #f2f2f2;
+      --metal-shadow: 0 0 15px #ff0033, 0 0 30px #ff0033;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background-color: #111;
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 2px solid var(--primary);
+      box-shadow: var(--metal-shadow);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: var(--primary);
+      text-shadow: 0 0 5px #ff0033;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-weight: 300;
+      font-size: 1.2em;
+    }
+
+    .twitter {
+      margin-top: 10px;
+    }
+
+    .twitter a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 30px 20px;
+    }
+
+    article {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: var(--metal-shadow);
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+      text-shadow: 0 0 8px #ff0033;
+    }
+
+    footer {
+      background-color: #111;
+      color: #888;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 2px solid var(--primary);
+    }
+
+    .github-button {
+      display: inline-block;
+      background-color: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .github-button:hover {
+      background-color: var(--primary);
+      color: black;
+      box-shadow: var(--metal-shadow);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AFA Media</h1>
+    <p>Actu France Alerte – L'actualité politique en temps réel</p>
+    <div class="twitter">
+      Suivez-nous sur <a href="https://x.com/actu_alerte" target="_blank">@actu_alerte</a>
+    </div>
+    <a class="github-button" href="https://github.com/afamedia/site-web/" target="_blank">Code source sur GitHub</a>
+  </header>
+
+  <main>
+    <article>
+      <h2>Dernières alertes politiques</h2>
+      <!-- Intégration de X.com -->
+      <a class="twitter-timeline" 
+         data-lang="fr" 
+         data-height="600" 
+         data-theme="dark"
+         href="https://x.com/actu_alerte">
+         Publications de @actu_alerte
+      </a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 AFA Media – Tous droits réservés
+  </footer>
+</body>
+</html>
