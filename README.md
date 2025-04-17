@@ -1,4 +1,4 @@
-# # AFAMedia
+# # # AFAMedia
 AFAMedia est un média d'information indépendant axé sur la politique française.
 
 Contact :
